@@ -3,10 +3,19 @@ import styled from "styled-components";
 export const TodoContainer = styled.div`
   /* border: 1px solid red; */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 50px;
-  margin-top: 150px ;
+  /* margin-top: 150px ; */
+  height: 700px;
+  background: linear-gradient(
+    -45deg,
+    rgb(238, 119, 82),
+    rgb(231, 60, 126),
+    rgb(35, 166, 213),
+    rgb(35, 213, 171)
+  )
+  0% 0% / 400% 400%;
 `;
 export const TodoWrapper = styled.div`
   display: flex;

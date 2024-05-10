@@ -1,17 +1,17 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import {
   TextWrapper,
   TodoContainer,
   TodoTitle,
   TodoWrapper,
-} from "../styles/todoStyle";
+} from "../../styles/todoStyle01";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import TextField from "@mui/material/TextField";
 import { IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const UseStateComponent = () => {
+const TodoApp01Component = () => {
   ///road map of useEffect
 
   // useEffect(()=> {
@@ -43,6 +43,7 @@ const UseStateComponent = () => {
   //input add array
   const [box, setBox] = useState([]);
 
+  
   function handleAddText() {
     if (text !== "") {
       setBox((prevTexts) => [...prevTexts, text]);
@@ -51,13 +52,13 @@ const UseStateComponent = () => {
   }
 
   // reset all todos
-  const resetInput =()=> {
-    setBox([])
-  }
+  const resetInput = () => {
+    setBox([]);
+  };
   // reset a todo
-  const resetBox =()=> {
-    setText([])
-  }
+  const resetBox = () => {
+    setBox([]);
+  };
 
   return (
     <TodoContainer>
@@ -70,7 +71,7 @@ const UseStateComponent = () => {
             gap: "10px",
             justifyContent: "center",
             alignContent: "center",
-            marginBottom: "10px"
+            marginBottom: "10px",
           }}
         >
           <TextField
@@ -84,7 +85,7 @@ const UseStateComponent = () => {
             fullWidth
             sx={{}}
           />
-          <Button variant="contained" color="secondary" onClick={handleAddText} >
+          <Button variant="contained" color="secondary" onClick={handleAddText}>
             {<AddIcon />}
           </Button>
         </div>
@@ -101,7 +102,11 @@ const UseStateComponent = () => {
           {box.map((value, key) => (
             <TextWrapper key={key}>
               {value}
-              <IconButton aria-label="delete" onClick={resetBox} sx={{ padding: "0px" }}>
+              <IconButton
+                aria-label="delete"
+                onClick={resetBox}
+                sx={{ padding: "0px" }}
+              >
                 <DeleteIcon color="error" />
               </IconButton>
             </TextWrapper>
@@ -117,7 +122,12 @@ const UseStateComponent = () => {
           }}
         >
           <p>You have {box.length} pending tasks</p>
-          <Button variant="contained" color="secondary" size="small"  onClick={resetInput}>
+          <Button
+            variant="contained"
+            color="secondary"
+            size="small"
+            onClick={resetInput}
+          >
             Clear All
           </Button>
         </div>
@@ -126,4 +136,4 @@ const UseStateComponent = () => {
   );
 };
 
-export default UseStateComponent;
+export default TodoApp01Component;

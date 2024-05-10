@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TextWrapper } from "../styles/todoStyle";
+import { TextWrapper } from "../../styles/todoStyle01";
 
 const CounterComponent = ({ counterTodoList }) => {
   const [data, setData] = useState([]);
