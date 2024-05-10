@@ -19,25 +19,27 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: "1px solid red";
-background-color: #006DAB;
+background-color: #D2B48C;
 width: 100%;
-max-width: 300px;
-height: 150px;
+width: 200px;
+height: 130px;
 border-radius:25px ;
 padding: 20px;
-border: 2px solid #006DAB;
+border: 2px solid #D2B48C;
 box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 background-image: ${img};
 &:hover{
-    background-color:#FFF5EE;
-    color: #006DAB;
+    background-color: transparent;
+    color: #8B4513;
+border: 2px solid #8B4513;
+
     transform: scale(1.05);
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
 
 
-color: var(--blue, #fafafa);
+color: var(--blue, #8B4513);
 font-family: Montserrat;
 font-size: 38px;
 font-style: normal;
@@ -51,11 +53,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-bottom: 40px;
-border-bottom: 2px solid #006DAB;
+border-bottom: 2px solid #8B4513;
 
-color: var(--blue, #fff);
+color: var(--blue, #8B4513);
 font-family: Montserrat;
-font-size: 38px;
+font-size: 45px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;

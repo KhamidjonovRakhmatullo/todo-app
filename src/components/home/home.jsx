@@ -13,18 +13,18 @@ const HomeComponent = () => {
             justifyContent: "center",
             alignItems: "center",
             width: "100%",
-            gap: "70px",
+            gap: "20px",
             // marginTop: "300px"
           }}
         >
           <Link to="todoApp01" style={{ textDecoration: "none" }}>
-            <List1>Todo List 1</List1>
+            <List1>List 1</List1>
           </Link>
           <Link to="todoApp02" style={{ textDecoration: "none" }}>
-            <List1>Todo List 2</List1>
+            <List1>List 2</List1>
           </Link>
           <Link to="todoApp03" style={{ textDecoration: "none" }}>
-            <List1>Todo List 3</List1>
+            <List1>List 3</List1>
           </Link>
         </div>
       </div>

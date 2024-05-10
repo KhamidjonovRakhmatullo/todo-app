@@ -105,9 +105,16 @@ const TodoApp01Component = () => {
               <IconButton
                 aria-label="delete"
                 onClick={resetBox}
-                sx={{ padding: "0px" }}
+                sx={{ 
+                  padding: "8px",
+                  backgroundColor: "#FF6347",
+                  color: "white",
+                  fontSize: "16px",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                 }}
               >
-                <DeleteIcon color="error" />
+                <DeleteIcon />
               </IconButton>
             </TextWrapper>
           ))}
