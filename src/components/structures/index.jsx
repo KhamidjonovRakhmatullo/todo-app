@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-const UseStateComponent = () => {
+const UseStateCounterComponent = () => {
     const [count, setCount] = useState(0)
+    
     function handleIncreament(){
        setCount (count +1)
     }
@@ -15,7 +16,7 @@ const UseStateComponent = () => {
      }
    
   return (
-    <div>
+    <div  style={{ border: "1px solid orange", margin: "60px", padding: "30px" }}>
         <p>Count: {count}</p>
         <button onClick={ handleIncreament}>Increament</button>
         <button onClick={ handleDecreament}>Decreament</button>
@@ -23,4 +24,4 @@ const UseStateComponent = () => {
   )
 }
 
-export default UseStateComponent
+export default UseStateCounterComponent

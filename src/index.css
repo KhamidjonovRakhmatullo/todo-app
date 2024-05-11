@@ -17,3 +17,20 @@ code {
   padding: 0px;
   box-sizing: border-box;
 } */
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: red;  */
+  /* background: #f1f1f1; Light grey background */
+  width: 2px;
+}
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+  /* background: #888; Dark grey thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}

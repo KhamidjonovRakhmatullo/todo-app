@@ -4,6 +4,7 @@ import HomeComponent from './components/home/home'
 import TodoApp01Component from './components/todoApp1/todoApp01'
 import TodoApp02Component from './components/todoApp2/todoApp02'
 import TodoApp03Component from './components/todoApp3/todoApp03'
+import AllStructures from './components/structures/allStructures'
 
 const RouterComponent = () => {
   return (
@@ -14,6 +15,7 @@ const RouterComponent = () => {
             <Route path='todoApp01' element={<TodoApp01Component/>}/>
             <Route path='todoApp02' element={<TodoApp02Component/>}/>
             <Route path='todoApp03' element={<TodoApp03Component/>}/>
+            <Route path='allStructures' element={<AllStructures/>}/>
         </Routes>
         </BrowserRouter>
     </div>

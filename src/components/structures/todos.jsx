@@ -4,14 +4,13 @@ import { useCallback } from "react";
 import { useState } from "react";
 
 const TodosComponent = () => {
-
   const [count, setCount] = useState(0);
 
   //click button and return +1
   const handleAddNumber = () => {
     setCount(count + 1);
   };
- 
+
   const [data, setData] = useState([]);
 
   const counterTodoList = useCallback(() => {

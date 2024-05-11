@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeContainer, List1, Title } from "../../styles/homeStyle";
 import { Link } from "react-router-dom";
+import AllStructures from "../structures/allStructures";
 
 const HomeComponent = () => {
   return (
